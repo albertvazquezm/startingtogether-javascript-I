@@ -5,27 +5,31 @@
  * - alternativas modernas (estilo funcional) (forEach, map, reduce)
  */
 
-const notas = [2, 3, 5, 5, 1, 4, 1, 3.5];
-const notasSobre10 = [];
-
 /**
- * Bucle for
- */
+* Declaración arrays
+*/
+
+const notas = [1, 4, 3, 5, 3, 1];
 
 for (let i = 0; i < notas.length; i++) {
-    notasSobre10[i] = notas[i] * 2;
+    notas[i] = notas[i] * 2;
 }
+
+console.log(notas);
 
 /**
  * Bucles forEach, map, reduce
  */
 
-const nuevoArr = notas.map((valor) => {
-    return `hola`;
+notas.forEach((val, idx, arr) => {
+
+})
+
+const notasSobre10 = notas.map((val, idx, arr) => {
+    val = val * 2;
+    return `hola!`;
 });
 
-console.log(nuevoArr);
-
-
+console.log(notasSobre10);
 
 

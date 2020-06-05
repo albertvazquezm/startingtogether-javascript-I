@@ -1,6 +1,6 @@
 /**
  * Hay 8 tipos de datos en JavaScript
- * 
+ *
  * - PRIMITIVOS
  *
  * - string: cadenas de texto
@@ -12,49 +12,56 @@
  *
  * - bigint: numeros de cualquier longitud
  * - symbol: valor único e inmutable
- * 
+ *
  * - OBJETO
- * 
+ *
  * - object: for more complex data structures.
- * 
+ *
  */
 
 /**
- * Tipos primitivos
+ * string / number y boolean
  */
 
-let url = `google.es`;
-const age = 20;
-const isEnabled = false;
+ const str = `hola que tal!`;
+ const num = 123;
+ const isItTrue = true;
+
 
 /**
  * null / undefined
  */
 
-let user = null;
+let myOtherName;
+
+console.log(myOtherName);
+
+ let myName = `Albert`;
+ myName = null;
 
 /*
-    Tipos complejos (objeto)
+    Tipos complejos (objeto y arr)
  */
 
-const connectionDetails = {
-    url: `www.google.es`,
-    port: 80,
-    isConned: false,
-    metadata: {
-        a: 'a',
-        b: 'b'
-    }
-}
 
-const myArr = ['hola', 'adios', 20, [0,1,3]];
+ const appConfig = {
+     port: '8080',
+     isDev: true,
+     'apiUrl--2': `url`,
+     metadata: {
+         a: 'a',
+         b: 'b'
+     }
+ }
 
-
-/**
- * Acceder y mutar propiedades de los objetos
- */
+const notas = [{},{},[1,2]];
 
 
 /**
  * (Casi) todo en JavaScript es un objeto. Por qué!
  */
+
+const myName2 = `Albert`;
+const age = 49;
+
+console.log(age.toFixed(2));

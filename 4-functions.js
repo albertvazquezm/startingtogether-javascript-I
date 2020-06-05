@@ -7,8 +7,7 @@
  * Function expressions (pre-es6)
  */
 
-function run() {
-
+function myFunction() {
 }
 
 /**
@@ -16,22 +15,24 @@ function run() {
 * - Elección de un buen nombre
 */
 
-const generateTokenWithMethodJoeHopkins = () => {
-    console.log()
+const sum = (a, b) => {
+    console.log(a + b);
 }
+
+sum(10, 15);
 
 /**
  * Parámetros y return
- * - Variables como parámetros (primitivos, funciones...)
+ * - Variables como parámetros (primitivos, objetos, funciones...)
  * - Callbacks
  * - Ejemplo retornar objeto
  */
 
-const sum = (valueA, valueB) => {
-    return valueA + valueB
+const getConfig = () => {
+    return {
+        a: 'a',
+        b: 'b',
+    }
 }
 
-const sumResult = sum(10, 5);
-const sumResult2 = sum(sumResult, 5);
-
-console.log(sumResult2);
+console.log(getConfig().a.length)
